@@ -1,0 +1,92 @@
+:root {
+  --gradient1: #d5d5d5;
+  --gradient2: #34675C;
+  --borda-form: #A3CCAB;
+  --fundo-geral: #053D38;
+}
+
+html {
+  background: radial-gradient(farthest-corner at left top, var(--gradient1), var(--gradient2));
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.corpo {
+  flex-grow: 1;
+  flex-basis: auto;
+  padding: 10vh 3em 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.geral {
+  min-width: 600px;
+  padding: 4em 2em 2em;
+  background: var(--fundo-geral);
+  box-sizing: border-box;
+  border-radius: 10px;
+  gap: 2em;
+}
+
+.meuForm {
+  width: 100%;
+}
+
+.meuForm input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5em 0 1em;
+  padding: 1em 0.5em;
+  border-radius: 10px;
+  border: 2px solid var(--borda-form);
+}
+
+.meuForm label {
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  color: white;
+}
+
+.btnGravar {
+  background-color: var(--borda-form);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lista-convidados {
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0.6em 2em;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 1em 0 0 1em;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.item span {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  Justify-content: center;
+  width: 50px;
+  height: 50px;
+  Background: #9ab7f3;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
